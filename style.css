@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  background-color: #182729;
+  width: 100%;
+  max-width: 800px;
+  position: relative;
+}
+
+.textDecor {
+  background-image: linear-gradient(360deg, #3d3d3d, #d5d5d6);
+  background-clip: text;
+  color: transparent;
+}
+
+/*Utils*/
+h2.textBlockHeader {
+  color: #b3d3cf;
+}
+
+/*Header*/
+
+nav {
+  padding: 8% 5%;
+  background-color: #56332a;
+}
+
+nav h1 {
+  padding: 2px;
+  text-align: center;
+  font-size: 2.2rem;
+}
+
+/*Hero*/
+
+section#hero {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.backgroundHeroImage {
+  background-image: url("images/enterjesus.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 60svh;
+  filter: brightness(0.6);
+}
+
+section#hero blockquote {
+  background-color: #182729;
+  color: #fff;
+  width: 100%;
+  padding: 2rem;
+  font-size: 1rem;
+  text-align: end;
+  line-height: 1.5;
+}
+section#hero blockquote footer {
+  font-weight: 800;
+}
+
+/*Birth*/
+
+section#birth {
+  background-color: #182729;
+  color: #fefefe;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 5%;
+}
+
+img#birthImage {
+  width: 400px;
+  height: auto;
+  max-height: 400px;
+  background-color: #fefefe;
+  padding: 12px;
+  margin: 5px;
+}
+
+section#birth .textBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+/*Magnificat*/
+
+section#magnificat {
+  /* display: flex;
+  flex-direction: row-reverse; */
+  padding: 5%;
+  background-image: linear-gradient(
+    #182729,
+    #4c8f86,
+    #f1f2ff,
+    #f1f2ff,
+    #f1f2ff,
+    #f1f2ff,
+    #f1f2ff,
+    #f1f2ff,
+    #f1f2ff
+  );
+}
+
+section#magnificat img {
+  width: 50vw;
+  height: auto;
+  max-height: 450px;
+  float: right;
+  padding: 3%;
+}
+
+section#magnificat .textBlock {
+  padding: 5%;
+  background-image: linear-gradient(
+    #182729,
+    #4c8f86,
+    #f1f2ff,
+    #f1f2ff,
+    #f1f2ff,
+    #f1f2ff
+  );
+  background-color: #b3d3cf;
+  border: 6px double rgb(221, 199, 142);
+  border-radius: 15px;
+  box-shadow: -3px 3px 8px -1px rgba(0, 0, 0, 0.5);
+}
+
+/*Foundations*/
+#life {
+  text-align: center;
+  margin: 0 auto;
+  padding: 2%;
+  /* border: 1px solid black; */
+}
+
+.foundations h3 {
+  background-color: #b3d3cf;
+  padding: 10px 25px;
+}
+
+.foundations .lifeBlocks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 33% 1fr;
+  grid-template-areas:
+    "rachel rachel"
+    "exiled nazarene";
+  gap: 10%;
+}
+
+.rachel {
+  grid-area: rachel;
+}
+.exiled {
+  grid-area: exiled;
+}
+.nazarene {
+  grid-area: nazarene;
+}
