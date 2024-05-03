@@ -26,6 +26,16 @@ h2.textBlockHeader {
   color: #b3d3cf;
 }
 
+.banner {
+  width: 100%;
+  height: 45px;
+  background-image: linear-gradient(180deg, #182729, #863636, #182729);
+  filter: blur(0.5px);
+}
+.banner-lg {
+  height: 150px;
+}
+
 /*Header*/
 
 header nav {
@@ -54,12 +64,13 @@ section#hero {
   background-position: center;
   background-size: cover;
   width: 100%;
-  height: 60svh;
+  height: 80svh;
   filter: brightness(0.6);
 }
 
 section#hero blockquote {
   background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.2);
   color: #fff;
   width: 400px;
   padding: 2rem;
@@ -67,6 +78,7 @@ section#hero blockquote {
   text-align: end;
   line-height: 1.5;
   position: absolute;
+  font-weight: 900;
   z-index: 1;
   top: 5%;
   right: 5%;
@@ -81,10 +93,15 @@ section#birth {
   background-color: #182729;
   color: #fefefe;
   padding: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
 }
 
 img#birthImage {
-  width: 400px;
+  width: 300px;
   height: auto;
   max-height: 400px;
   background-color: #fefefe;
@@ -95,6 +112,7 @@ img#birthImage {
 section#birth .textBlock {
   display: flex;
   flex-direction: column;
+  gap: 10px;
   align-items: center;
   width: 50%;
 }
@@ -102,26 +120,13 @@ section#birth .textBlock {
 /*Magnificat*/
 
 section#magnificat {
-  /* display: flex;
-  flex-direction: row-reverse; */
   padding: 5%;
-  background-image: linear-gradient(
-    #182729,
-    #4c8f86,
-    #f1f2ff,
-    #f1f2ff,
-    #f1f2ff,
-    #f1f2ff,
-    #f1f2ff,
-    #f1f2ff,
-    #f1f2ff
-  );
+  width: 80%;
 }
 
 section#magnificat img {
-  width: 50vw;
-  height: auto;
-  max-height: 450px;
+  width: 65%;
+  height: 400px;
   float: right;
   padding: 3%;
 }
